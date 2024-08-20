@@ -1,0 +1,22 @@
+services:
+  nudge:
+    container_name: nudge
+    image: ecliptera/nudge:latest
+    environment:
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+      DB_URL: jdbc:postgresql://postgres:5432/nudge
+      JWK_SET_URI: http://keycloak:8080/realms/api.knox.gb.net/protocol/openid-connect/certs
+      SENDGRID_API_KEY: example.key
+    ports:
+      - 8080:8080
+    networks:
+      - docker_postgres-network
+      - docker_keycloak-network
+    restart: unless-stopped
+
+networks:
+  docker_postgres-network:
+    external: true
+  docker_keycloak-network:
+    external: true

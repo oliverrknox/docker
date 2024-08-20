@@ -10,7 +10,13 @@ services:
       - keycloak-data:/opt/keycloak/data
     ports:
       - 9025:8080
+    networks:
+      - keycloak-network
     restart: unless-stopped
+
+networks:
+  keycloak-network:
+    driver: bridge
 
 volumes:
   keycloak-data:

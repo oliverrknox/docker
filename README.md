@@ -33,3 +33,17 @@ https://www.pgadmin.org/
 ```bash
 docker compose -f postgres.docker-compose.yml -d up
 ```
+
+## Nudge
+
+https://api.knox.gb.net/nudge-gateway/swagger-ui/index.html
+
+**Pre-deployment checklist**
+
+- [ ] Update environment variables
+
+**Run**
+
+```bash
+docker compose -f nudge.docker-compose.yml -d up
+```
