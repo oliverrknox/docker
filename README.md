@@ -15,7 +15,7 @@ https://www.keycloak.org/
 **Run**
 
 ```bash
-docker compose -f keycloak.docker-compose.yml -d up
+docker compose -f keycloak.docker-compose.yml up -d
 ```
 
 ## PostgreSQL
@@ -31,7 +31,7 @@ https://www.pgadmin.org/
 **Run**
 
 ```bash
-docker compose -f postgres.docker-compose.yml -d up
+docker compose -f postgres.docker-compose.yml up -d
 ```
 
 ## Nudge
@@ -45,5 +45,5 @@ https://api.knox.gb.net/nudge-gateway/swagger-ui/index.html
 **Run**
 
 ```bash
-docker compose -f nudge.docker-compose.yml -d up
+docker compose -f nudge.docker-compose.yml up -d
 ```

@@ -6,6 +6,9 @@ services:
     environment:
       KEYCLOAK_ADMIN: keycloak
       KEYCLOAK_ADMIN_PASSWORD: keycloak
+      KC_HOSTNAME: https://api.knox.gb.net/keycloak
+      KC_HOSTNAME_BACKCHANNEL_DYNAMIC: true
+      KC_HTTP_ENABLED: true
     volumes:
       - keycloak-data:/opt/keycloak/data
     ports:
