@@ -1,0 +1,9 @@
+services:
+  portfolio:
+    container_name: portfolio
+    image: ecliptera/portfolio:latest
+    environment:
+      GITHUB_OAUTH: example.token
+    ports:
+      - 8081:8080
+    restart: unless-stopped
