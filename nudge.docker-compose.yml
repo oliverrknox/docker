@@ -1,12 +1,12 @@
 services:
   nudge:
     container_name: nudge
-    image: ecliptera/nudge:latest
+    image: oliverrknox/nudge:latest
     environment:
       DB_USERNAME: postgres
       DB_PASSWORD: postgres
       DB_URL: jdbc:postgresql://postgres:5432/nudge
-      JWK_SET_URI: http://keycloak:8080/realms/api.knox.gb.net/protocol/openid-connect/certs
+      JWK_SET_URI: http://keycloak:8080/realms/api.oliverknox.io/protocol/openid-connect/certs
       SENDGRID_API_KEY: example.key
     ports:
       - 8080:8080

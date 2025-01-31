@@ -23,7 +23,7 @@ services:
     container_name: pgadmin
     image: dpage/pgadmin4
     environment:
-      PGADMIN_DEFAULT_EMAIL: oliver@knox.gb.net
+      PGADMIN_DEFAULT_EMAIL: hi@oliverknox.io
       PGADMIN_DEFAULT_PASSWORD: pgadmin4
     volumes:
       - pgadmin-data:/var/lib/pgadmin

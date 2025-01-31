@@ -36,7 +36,7 @@ docker compose -f postgres.docker-compose.yml up -d
 
 ## Nudge
 
-https://api.knox.gb.net/nudge-gateway/swagger-ui/index.html
+https://api.oliverknox.io/nudge-gateway/swagger-ui/index.html
 
 **Pre-deployment checklist**
 
@@ -50,7 +50,7 @@ docker compose -f nudge.docker-compose.yml up -d
 
 ## Portfolio
 
-https://oliver.knox.gb.net/
+https://oliverknox.io/
 
 **Pre-deployment checklist**
 

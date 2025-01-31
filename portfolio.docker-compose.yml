@@ -1,7 +1,7 @@
 services:
   portfolio:
     container_name: portfolio
-    image: ecliptera/portfolio:latest
+    image: oliverrknox/portfolio:latest
     environment:
       GITHUB_OAUTH: example.token
     ports:
